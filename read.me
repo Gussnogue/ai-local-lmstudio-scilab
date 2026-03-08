@@ -1,0 +1,85 @@
+# 🧪 Tradutor de Scilab com IA Local
+
+Este projeto permite que você descreva em **linguagem natural** o que deseja fazer no Scilab, e uma **IA local (LM Studio)** gera o código automaticamente e o executa.
+
+---
+
+## 🚀 Como executar (passo a passo que funciona)
+
+### 1. Pré-requisitos
+
+- **Python 3.10+** instalado
+- **LM Studio** instalado e rodando com um modelo de código (ex: `hermes-3-llama-3.2-3b`)
+- **Scilab 2026+** instalado (ou versão similar)
+
+### 2. Abrir o projeto no VSCode
+
+Abra a pasta do projeto no VSCode.
+
+### 3. Abrir o terminal integrado
+
+Use o atalho `` Ctrl + ` `` ou vá em **Terminal > Novo Terminal**.
+
+**Certifique-se de que o terminal seja do tipo `cmd` (Prompt de Comando)** – 
+veja no canto superior direito do terminal se está escrito "cmd" ou "powershell". 
+Se for PowerShell, abra um novo e selecione "Command Prompt".
+
+### 4. Criar e ativar o ambiente virtual
+
+No terminal, execute:
+
+```bash
+
+python -m venv venv
+
+``
+
+Depois, ative o ambiente (no CMD):
+
+``
+
+venv\Scripts\activate.bat
+
+``
+
+-> Você verá (venv) no início da linha.
+
+5. Instalar as dependências
+Ainda com o ambiente ativo, execute:
+
+``
+
+pip install -r requirements.txt
+
+``
+
+6. Configurar o arquivo .env
+
+LM_STUDIO_URL=http://localhost:1234/v1
+MODELO_CODIGO=hermes-3-llama-3.2-3b
+SCILAB_PATH=C:/Program Files/scilab-2026.0.1/bin/WScilex-cli.exe
+
+Atenção:
+
+Ajuste o caminho do Scilab para a versão que você tem instalada.
+Use barras normais (/) ou barras duplicadas (\\) para evitar problemas com caracteres de escape.
+O modelo hermes-3-llama-3.2-3b deve estar carregado no LM Studio.
+
+7. Iniciar o LM Studio
+
+Abra o LM Studio.
+Carregue o modelo Hermes 3 Llama 3.2 3B (ou outro modelo de instrução).
+Ative o servidor local na porta 1234 (botão "Start Server").
+Mantenha o LM Studio aberto.
+
+8. Executar o Streamlit
+
+No terminal (com o ambiente venv ativado), execute:
+
+``
+
+.\venv\Scripts\streamlit run app.py
+
+
+``
+
