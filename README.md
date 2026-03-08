@@ -17,7 +17,7 @@ Um aplicativo que traduz descrições em linguagem natural para código **Scilab
 - ✅ **Interpretação em Português:** Descreva o problema em linguagem natural.
 - ✅ **Geração Automática de Código:** IA local (ex: Hermes 3 Llama 3.2 3B) produz o script Scilab.
 - ✅ **Execução Integrada:** O código é executado no Scilab automaticamente.
-- ✅ **Privacidade Total:** Tudo roda na sua máquina — sem envio de dados para a nuvem.
+- ✅ **Privacidade Total:** Tudo roda na sua máquina, sem envio de dados para a nuvem.
 - ✅ **Interface Simples:** Feita com Streamlit, fácil de usar e modificar.
 
 ---
@@ -66,7 +66,7 @@ Ajuste o caminho do Scilab para a sua instalação. Use barras normais (/).
    streamlit run app.py
 
 ## 📄 Licença
-Este projeto está licenciado sob a MIT License – veja o arquivo LICENSE para mais detalhes.
+Este projeto está licenciado sob a MIT License. veja o arquivo LICENSE para mais detalhes.
 
 ## 🤝 Contribuições
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests.
