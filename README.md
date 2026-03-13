@@ -53,7 +53,7 @@ Um aplicativo que traduz descrições em linguagem natural para código **Scilab
    ```bash
    LM_STUDIO_URL=http://localhost:1234/v1
    MODELO_CODIGO=hermes-3-llama-3.2-3b
-   SCILAB_PATH=C:/Program Files/scilab-2026.0.1/bin/WScilex-cli.exe
+   SCILAB_PATH=C:/Program Files/scilab-2026.0.1/bin/WScilex-cli.exe - "example"
 Ajuste o caminho do Scilab para a sua instalação. Use barras normais (/).
 
 5. **Inicie o LM Studio**
